@@ -27,3 +27,7 @@ To change the port run `python manage.py runserver 8080`
 
 Don’t use this server in anything resembling a production environment. It’s intended only for use while developing. (We’re in the business of making Web frameworks, not Web servers.)
 
+## Hot Reloading
+
+The development server automatically reloads Python code for each request as needed. You don’t need to restart the server for code changes to take effect. However, some actions like adding files don’t trigger a restart, so you’ll have to restart the server in these cases.
+
