@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
+    # include() references the URLConf from another package
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
 ]
