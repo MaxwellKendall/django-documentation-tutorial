@@ -21,7 +21,9 @@ Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 ```
 
-To change the port run `python manage.py runserver 8080`
+- To change the port run `python manage.py runserver 8080`
+- To create the db run `python manage.py migrate`
+- To connect to the db run `sqlite3 db.sqlite3`
 
 ## Important
 
