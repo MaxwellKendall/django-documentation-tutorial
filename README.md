@@ -1,8 +1,10 @@
-# Dependencies
+# [Django Tutorial from Documentation](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
+
+## Dependencies
 
 Django 2.2.1, Python 3.5.5/3.7.2
 
-# Local Development
+## Local Development
 Run `python manage.py runserver`
 
 You'll see the following in the command line:
