@@ -2,13 +2,15 @@ from django.shortcuts import render
 
 # Create your views here.
 
-from django.http import HttpResponse
+from django.http import JsonResponse
 from .models import Question
 
 def index(request):
     latest_question_list = Question.objects.order_by("-pub_date")[:5]
-    output = ", ".join([q.question_text for q in latest_question_list])
-    return HttpResponse(output)
+    output = {
+      'questions': ", ".join([q.question_text for q in latest_question_list])
+    }
+    return JsonResponse(output)
 
 def detail(request, question_id):
     return HttpResponse("You're looking at question %s." % question_id)
